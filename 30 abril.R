@@ -60,7 +60,7 @@ m_sam <- matrix(c(sample(((m_sam_col*m_sam_row)**2),(m_sam_row*m_sam_col),replac
 #Usaremos sample() para crear tales elemtos dentro del vector
   #Sintanxis de sample("elemento maximo a utilizar en la muestra","numero de muestras a crear","la muestra se reemplaza?")
   #"valor maximo para la muestra" es igual al numero de columnas a usar por numero de filas elevados al cuadrado
-  #"numero de muestras a crear" es igual al numero de filas por numero de columnas igual al tamaño de nuestra matrix
+  #"numero de muestras a crear" es igual al numero de filas por numero de columnas igual al tamaÃ±o de nuestra matrix
   #"la muestra se reemplaza" opcional
 
 #4
@@ -83,6 +83,10 @@ raiz_cua(89)
 
 #5
 chrn <- function(a,b,c){
+  if (is.nan(sqrt(b^2 - 4*a*c))==T){
+    print("Raiz imaginaria, sin resultado")
+    break()
+    }
   raiz1 <- (-b + sqrt(b^2 - 4*a*c))/(2*a)
   raiz2 <- (-b - sqrt(b^2 - 4*a*c))/(2*a)
   rt <- vector("numeric",2)
