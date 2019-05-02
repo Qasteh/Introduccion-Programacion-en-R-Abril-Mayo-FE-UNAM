@@ -7,7 +7,7 @@
 #marcha (Automatica o manual, character) (logical?)
 #acel (aceleracion km/h en 10 seg, numeric)
 #peso (kg, numeric)
-#year (año del vehiculo, numeric)
+#year (aÃ±o del vehiculo, numeric)
 
 #Creacion de base de datos
 listoral <- 50 #Creacion de observaciones en filas
@@ -29,7 +29,7 @@ carros <- data.frame(
   marcha,
   acel,
   peso,
-  year) #row.names = "Marca","Color","Velocidad Maxima","Marcha","Acceleracion","Peso","Año")
+  year) #row.names = "Marca","Color","Velocidad Maxima","Marcha","Acceleracion","Peso","AÃ±o")
 
 carros
 
